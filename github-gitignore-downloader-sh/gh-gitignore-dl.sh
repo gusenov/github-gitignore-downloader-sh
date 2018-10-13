@@ -3,6 +3,30 @@
 #set -x  # echo on
 
 declare -a collection=(
+#
+# C/C++:
+#    "C"
+#    "C++"
+#    "VisualStudio"
+#    "Qt"
+#
+# C#:
+#    "VisualStudio"
+#
+# Java:
+#    "Global/JetBrains"
+#    "Java"
+#    "Gradle"
+#
+# JavaScript:
+#    "Node"
+#
+# Python:
+#    "Global/JetBrains"
+#    "Python"
+#
+#    "Android"
+#
 #    "Global/Anjuta"
 #    "Global/Ansible"
 #    "Global/Archives"
@@ -24,7 +48,6 @@ declare -a collection=(
 #    "Global/GPG"
 #    "Global/JDeveloper"
 #    "Global/JEnv"
-#    "Global/JetBrains"
 #    "Global/Kate"
 #    "Global/KDevelop4"
 #    "Global/Lazarus"
@@ -64,15 +87,12 @@ declare -a collection=(
 #    "Actionscript"
 #    "Ada"
 #    "Agda"
-#    "Android"
 #    "AppceleratorTitanium"
 #    "AppEngine"
 #    "ArchLinuxPackages"
 #    "Autotools"
 #    "CakePHP"
 #    "CFWheels"
-#    "C"
-#    "C++"
 #    "ChefCookbook"
 #    "Clojure"
 #    "CMake"
@@ -104,13 +124,11 @@ declare -a collection=(
 #    "Gcov"
 #    "GitBook"
 #    "Go"
-#    "Gradle"
 #    "Grails"
 #    "GWT"
 #    "Haskell"
 #    "Idris"
 #    "IGORPro"
-#    "Java"
 #    "Jboss"
 #    "Jekyll"
 #    "Joomla"
@@ -131,7 +149,6 @@ declare -a collection=(
 #    "MetaProgrammingSystem"
 #    "Nanoc"
 #    "Nim"
-#    "Node"
 #    "Objective-C"
 #    "OCaml"
 #    "Opa"
@@ -145,9 +162,7 @@ declare -a collection=(
 #    "Prestashop"
 #    "Processing"
 #    "PureScript"
-#    "Python"
 #    "Qooxdoo"
-#    "Qt"
 #    "Rails"
 #    "R"
 #    "RhodesRhomobile"
@@ -176,7 +191,6 @@ declare -a collection=(
 #    "Umbraco"
 #    "Unity"
 #    "UnrealEngine"
-#    "VisualStudio"
 #    "VVVV"
 #    "Waf"
 #    "WordPress"
@@ -225,4 +239,6 @@ if [ -n "$collection" ]; then
         echo "" >> "$path_to_gitignore"
         writeln_separator "$path_to_gitignore"
     done
+    
+    rm gh-gitignore-dl.sh
 fi
